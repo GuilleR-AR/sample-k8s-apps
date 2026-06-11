@@ -8,9 +8,9 @@ metadata:
 ---
 apiVersion: apps/v1
 kind: Deployment
-namespace: hello-app
 metadata:
   name: hello-app
+  namespace: hello-app
 spec:
   replicas: 3
   selector:
@@ -34,6 +34,7 @@ kind: Service
 namespace: hello-app
 metadata:
   name: hello-lb
+  namespace: hello-app
   annotations:
     metallb.universe.tf/address-pool: default-address-pool
 spec:
