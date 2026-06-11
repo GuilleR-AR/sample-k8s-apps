@@ -31,6 +31,7 @@ spec:
 
 apiVersion: v1
 kind: Service
+namespace: hello-app
 metadata:
   name: hello-lb
   annotations:
