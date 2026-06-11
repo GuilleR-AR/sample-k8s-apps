@@ -35,8 +35,8 @@ namespace: hello-app
 metadata:
   name: hello-lb
   namespace: hello-app
-  annotations:
-    metallb.universe.tf/address-pool: default-address-pool
+#  annotations:
+#    metallb.universe.tf/address-pool: default-address-pool
 spec:
   type: LoadBalancer
   ports:
